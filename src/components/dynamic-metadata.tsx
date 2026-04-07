@@ -5,14 +5,14 @@ import { useLanguage } from "../context/language-context";
 
 const seo = {
   en: {
-    title: "SYS.CORE | Futuristic Developer Dashboard & Topology Monitor",
+    title: "NFT Registration USA | Legal NFT Consulting | NFTReg.US",
     description:
-      "Visualize your infrastructure with SYS.CORE. A sci-fi inspired, dark-mode dashboard for live node topology, memory allocation, and system diagnostics.",
+      "Register your NFT legally in the USA. We guide creators, companies, and investors through US Copyright Office, USPTO, and SEC compliance from start to finish.",
   },
   ko: {
-    title: "SYS.CORE | 미래지향적 개발자 대시보드 및 토폴로지 모니터",
+    title: "미국 NFT 등록 | NFT 법률 컨설팅 | NFTReg.US",
     description:
-      "SYS.CORE로 인프라를 시각화하세요. 라이브 노드 토폴로지, 메모리 할당 및 시스템 진단을 위한 SF 스타일의 다크 모드 대시보드입니다.",
+      "미국에서 NFT를 합법적으로 등록하세요. 미국 저작권청, USPTO, SEC 규제 준수까지 창작자, 기업, 투자자를 끝까지 안내해 드립니다.",
   },
 };
 

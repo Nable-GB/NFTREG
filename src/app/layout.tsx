@@ -1,23 +1,30 @@
 import type { Metadata } from "next";
-import { Chakra_Petch, JetBrains_Mono } from "next/font/google";
+import { Cormorant_Garamond, IBM_Plex_Mono, Source_Sans_3 } from "next/font/google";
 import { LanguageProvider } from "../context/language-context";
 import "./globals.css";
 
-const headingFont = Chakra_Petch({
+const headingFont = Cormorant_Garamond({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const monoFont = JetBrains_Mono({
+const bodyFont = Source_Sans_3({
+  variable: "--font-body",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const monoFont = IBM_Plex_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "SYS.CORE | Futuristic Developer Dashboard & Topology Monitor",
+  title: "NFT Registration USA | Legal NFT Consulting | NFTReg.US",
   description:
-    "Visualize your infrastructure with SYS.CORE. A sci-fi inspired, dark-mode dashboard for live node topology, memory allocation, and system diagnostics.",
+    "Register your NFT legally in the USA. We guide creators, companies, and investors through US Copyright Office, USPTO, and SEC compliance from start to finish.",
 };
 
 export default function RootLayout({
@@ -28,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${headingFont.variable} ${monoFont.variable} h-full scroll-smooth antialiased`}
+      className={`${headingFont.variable} ${bodyFont.variable} ${monoFont.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full overflow-x-hidden bg-[var(--bg)] text-[var(--text)]">
         <LanguageProvider>{children}</LanguageProvider>
