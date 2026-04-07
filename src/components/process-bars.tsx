@@ -1,25 +1,25 @@
-const bars = [
-  { label: "Consultation", value: 100, tone: "green" },
-  { label: "Agency Match", value: 92, tone: "violet" },
-  { label: "Filing Package", value: 84, tone: "green" },
-  { label: "Review Window", value: 68, tone: "violet" },
-  { label: "Compliance Support", value: 96, tone: "green" },
-];
+"use client";
+
+import { useLanguage } from "../context/language-context";
+import { translations } from "../lib/translations";
 
 export const ProcessBars = () => {
+  const { language } = useLanguage();
+  const copy = translations[language].processBars;
+
   return (
     <div className="panel relative overflow-hidden rounded-[1.6rem] p-4 sm:rounded-[2rem] sm:p-6">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(138,160,196,0.16),transparent_32%),radial-gradient(circle_at_bottom_left,rgba(213,176,106,0.14),transparent_28%)]" />
       <div className="relative space-y-4">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--muted)] sm:text-[10px] sm:tracking-[0.38em]">
-            filing progress
+            {copy.filingProgress}
           </p>
           <p className="w-fit rounded-full border border-[rgba(213,176,106,0.18)] bg-white/5 px-3 py-1 font-mono text-[9px] uppercase tracking-[0.22em] text-white/65 sm:text-[10px] sm:tracking-[0.3em]">
-            active matters
+            {copy.activeMatters}
           </p>
         </div>
-        {bars.map((bar) => {
+        {copy.bars.map((bar) => {
           const accent = bar.tone === "green" ? "var(--accent)" : "var(--violet)";
           return (
             <div key={bar.label} className="rounded-[1.05rem] border border-[rgba(255,248,238,0.08)] bg-white/[0.03] p-3 sm:rounded-[1.25rem]">
