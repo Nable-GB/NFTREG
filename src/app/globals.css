@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #071019;
+  --panel: rgba(8, 18, 31, 0.72);
+  --panel-strong: rgba(10, 22, 38, 0.92);
+  --text: #eff6ff;
+  --text-soft: #93a6bf;
+  --muted: #68809f;
+  --accent: #7cfcc4;
+  --accent-soft: rgba(124, 252, 196, 0.24);
+  --violet: #8b5cf6;
+  --node-cyan: #2dd4bf;
+  --node-blue: #60a5fa;
+  --node-green: #7cfcc4;
+  --node-violet: #a855f7;
+  --grid-color: rgba(107, 146, 197, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --font-sans: var(--font-heading);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top, rgba(11, 28, 46, 0.75), transparent 40%),
+    linear-gradient(180deg, #050b13 0%, #071019 45%, #04070d 100%);
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(6, 182, 212, 0.12), transparent 26%),
+    radial-gradient(circle at 82% 14%, rgba(139, 92, 246, 0.12), transparent 22%),
+    linear-gradient(180deg, #060b13 0%, #08121d 35%, #05080f 100%);
+  color: var(--text);
+  font-family: var(--font-heading), sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(124, 252, 196, 0.28);
+  color: white;
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(12, 25, 43, 0.82), rgba(7, 15, 27, 0.88));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 30px 60px rgba(0, 0, 0, 0.34),
+    0 0 0 1px rgba(124, 252, 196, 0.03);
+  backdrop-filter: blur(18px);
+}
+
+.grid-fade {
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.15));
+}
+
+.scanlines {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 4px;
+  mix-blend-mode: soft-light;
+  opacity: 0.12;
+}
+
+.node-orb {
+  position: relative;
+  animation: drift 5.4s ease-in-out infinite;
+}
+
+.bar-flow {
+  position: relative;
+  overflow: hidden;
+  animation: swell 3.8s ease-in-out infinite;
+}
+
+.bar-flow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.36), transparent);
+  transform: translateX(-100%);
+  animation: lane 2.6s linear infinite;
+}
+
+@keyframes lane {
+  to {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+
+  50% {
+    transform: translateY(-8px) scale(1.03);
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    filter: saturate(1) brightness(1);
+  }
+
+  50% {
+    filter: saturate(1.12) brightness(1.12);
+  }
+}
+
+@media (max-width: 640px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}

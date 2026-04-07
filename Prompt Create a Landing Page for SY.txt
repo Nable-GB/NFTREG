@@ -1,0 +1,106 @@
+Prompt: Create a Landing Page for "SYS.CORE" (Developer Dashboard & IDE)
+[DESIGN DIRECTION & VISUAL STYLE]
+Theme: Futuristic Dark Dashboard / Sci-Fi UI
+Aesthetic: A high-tech, clean digital dashboard interface in a futuristic dark mode style.
+Key Elements: - Left panel: Isometric 3D data visualization graph showing colorful glowing spheres connected to a grid by vertical lines. Large, prominent number displays for inbound/outbound volume.
+•	Right panel: Stacked, animated-style horizontal process bars displayed in vibrant glowing green and deep purple.
+•	Typography: Technical, clean sans-serif font (e.g., monospace or geometric sans).
+•	Overall mood: Dark, sophisticated, analytical, and cyberpunk-adjacent.
+________________________________________
+[LANDING PAGE COPY: 🇺🇸 English / 🇰🇷 한국어 Bilingual Version]
+NAVIGATION / 네비게이션
+🇺🇸 English | 🇰🇷 한국어
+Overview | 개요
+Topography | 토폴로지
+Diagnostics | 진단
+Audit Log | 감사 로그
+Download | 다운로드
+________________________________________
+HERO / 히어로
+Headline / 헤드라인
+🇺🇸 Master Your System Core.
+🇰🇷 시스템 코어를 완벽하게 장악하세요.
+Subheadline / 서브헤드라인
+🇺🇸
+Software development meets high-tech infrastructure monitoring. SYS.CORE provides a futuristic dark-mode environment to visualize live node topology, monitor process threads, and debug with ultimate clarity.
+🇰🇷
+소프트웨어 개발과 첨단 인프라 모니터링의 만남. SYS.CORE는 라이브 노드 토폴로지를 시각화하고, 프로세스 스레드를 모니터링하며, 완벽한 선명도로 디버깅할 수 있는 미래지향적인 다크 모드 환경을 제공합니다.
+CTA Buttons / CTA 버튼
+🇺🇸 English | 🇰🇷 한국어
+Initialize System (Free) ← Primary | 시스템 초기화 (무료) ← 주요 버튼
+↓ View Cluster Visualization ← Secondary | ↓ 클러스터 시각화 보기 ← 보조 버튼
+Hero Dashboard Data (Visual Cue) / 히어로 대시보드 데이터
+Field / 항목 | Value / 내용
+--- | ---
+System Status / 시스템 상태 | ● ALL SYSTEMS NOMINAL / ● 모든 시스템 정상
+Inbound Volume / 인바운드 볼륨 | 45,447 /s (↑19.6%)
+Outbound Volume / 아웃바운드 볼륨 | 12,005 /s (↓2.5%)
+Active Nodes / 활성 노드 | US-East-1, EU-Central, AP-South
+________________________________________
+SECTION 1 — THE PROBLEM / 문제점
+Headline / 헤드라인
+🇺🇸 Operating in the dark costs you time and resources.
+🇰🇷 어둠 속에서의 작업은 시간과 리소스를 낭비하게 합니다.
+Problem Cards / 문제 카드
+⚠️ Blind Spots in Architecture / 아키텍처의 사각지대
+🇺🇸 Without live visual topography, tracing data flows and identifying failed replica nodes becomes a guessing game.
+🇰🇷 실시간 시각적 토폴로지 없이는 데이터 흐름을 추적하고 실패한 복제 노드를 식별하는 것이 단순한 추측에 불과해집니다.
+🧩 Unoptimized Memory Allocation / 최적화되지 않은 메모리 할당
+🇺🇸 Memory leaks drain your system. Traditional logs don't show real-time active memory threads until it's too late.
+🇰🇷 메모리 누수는 시스템을 고갈시킵니다. 기존의 로그는 문제가 터지기 전까지 실시간 활성 메모리 스레드를 보여주지 않습니다.
+________________________________________
+SECTION 2 — FEATURES / 핵심 기능
+Headline / 헤드라인
+🇺🇸 Advanced diagnostics. Futuristic control.
+🇰🇷 고급 진단 기능. 미래지향적인 제어.
+01 — Cluster Visualization / 클러스터 시각화
+🇺🇸 Monitor live node topology and throughput in a stunning 3D isometric grid. Instantly spot anomalies with color-coded, glowing sphere indicators.
+Tags: 3D Topology · Node Tracking · Live Throughput
+🇰🇷 놀라운 3D 아이소메트릭 그리드에서 라이브 노드 토폴로지와 처리량을 모니터링하세요. 색상으로 구분된 빛나는 구형 표시기로 이상 징후를 즉시 파악할 수 있습니다.
+태그: 3D 토폴로지 · 노드 추적 · 실시간 처리량
+02 — Process Threads Monitor / 프로세스 스레드 모니터링
+🇺🇸 Track active memory allocation with vibrant, animated horizontal process bars. Watch green (OK) and purple (WAIT) metrics execute in real-time.
+Tags: Memory Allocation · Query Execution · Visual Debugging
+🇰🇷 생동감 있게 애니메이션화된 수평 프로세스 막대로 활성 메모리 할당을 추적하세요. 녹색(정상) 및 보라색(대기) 메트릭이 실시간으로 실행되는 것을 확인하세요.
+태그: 메모리 할당 · 쿼리 실행 · 시각적 디버깅
+03 — Event Frequency Map / 이벤트 빈도 맵
+🇺🇸 Analyze system interactions over a 7-day rolling window. Pinpoint high-signal rates and latency spikes instantly.
+Tags: Rolling Window · Audit Logs · Signal Rate
+🇰🇷 7일 이동 기간 동안의 시스템 상호 작용을 분석하세요. 높은 신호 속도와 지연 시간 급증을 즉시 찾아냅니다.
+태그: 이동 기간 · 감사 로그 · 신호 속도
+________________________________________
+SECTION 3 — WHO WE SERVE / 고객 대상
+Headline / 헤드라인
+🇺🇸 Built for data-heavy engineers & DevOps.
+🇰🇷 데이터 집약적인 엔지니어 및 DevOps를 위해 설계되었습니다.
+🇺🇸 English	🇰🇷 한국어
+🌐 DevOps Teams — Monitor server regions (US, EU, AP) from a single, unified high-tech dashboard.	🌐 DevOps 팀 — 단일화된 첨단 대시보드에서 서버 리전(US, EU, AP)을 모니터링하세요.
+⚙️ Backend Developers — Debug active memory allocation (MEM_BLOCK) and query executions (QUERY_EXEC) visually.	⚙️ 백엔드 개발자 — 활성 메모리 할당(MEM_BLOCK) 및 쿼리 실행(QUERY_EXEC)을 시각적으로 디버깅하세요.
+📊 Data Architects — Visualize high-volume data streams (45k+ operations/sec) without performance drops.	📊 데이터 아키텍트 — 성능 저하 없이 대용량 데이터 스트림(초당 45k+ 작업)을 시각화하세요.
+________________________________________
+SECTION 4 — CALL TO ACTION / 행동 촉구
+Headline / 헤드라인
+🇺🇸 Upgrade to the next generation of system monitoring.
+🇰🇷 차세대 시스템 모니터링으로 업그레이드하세요.
+Body / 본문
+🇺🇸 Leave boring text logs behind. Experience your infrastructure through a clean, sci-fi inspired dashboard that gives you total control.
+🇰🇷 지루한 텍스트 로그는 이제 버리세요. 완벽한 제어력을 제공하는 깔끔한 SF 스타일의 대시보드를 통해 인프라를 경험해 보세요.
+CTA Buttons / CTA 버튼
+🇺🇸 English | 🇰🇷 한국어
+Initialize SYS.CORE ← Primary | SYS.CORE 초기화 ← 주요 버튼
+Read Documentation → ← Secondary | 공식 문서 읽기 → ← 보조 버튼
+________________________________________
+FOOTER / 푸터
+🇺🇸 © 2026 SYS.CORE Dashboard · All systems nominal.
+Links: Topology · Security · API · Diagnostics
+🇰🇷 © 2026 SYS.CORE 대시보드 · 모든 시스템 정상.
+링크: 토폴로지 · 보안 · API · 진단
+________________________________________
+SEO METADATA / SEO 메타데이터
+Page Title / 페이지 제목
+🇺🇸 SYS.CORE | Futuristic Developer Dashboard & Topology Monitor
+🇰🇷 SYS.CORE | 미래지향적 개발자 대시보드 및 토폴로지 모니터
+Meta Description / 메타 설명
+🇺🇸 Visualize your infrastructure with SYS.CORE. A sci-fi inspired, dark-mode dashboard for live node topology, memory allocation, and system diagnostics.
+🇰🇷 SYS.CORE로 인프라를 시각화하세요. 라이브 노드 토폴로지, 메모리 할당 및 시스템 진단을 위한 SF 스타일의 다크 모드 대시보드입니다.
+
