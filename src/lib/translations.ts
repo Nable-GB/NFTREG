@@ -189,6 +189,12 @@ export const translations = {
       primary: "Book Free Consultation",
       secondary: "Explore Services",
     },
+    contact: {
+      heading: "Contact Us Directly",
+      telegram: "Telegram",
+      whatsapp: "WhatsApp",
+      kakao: "KakaoTalk",
+    },
     certificate: {
       heading: "sample registration certificate",
       filingAuthority: "filing authority",
@@ -415,6 +421,12 @@ export const translations = {
         "등록되지 않은 하루하루는 디지털 자산이 노출되는 시간입니다. 단 한 번의 상담이 모든 것을 바꿉니다.",
       primary: "무료 상담 예약",
       secondary: "서비스 살펴보기",
+    },
+    contact: {
+      heading: "직접 문의하기",
+      telegram: "텔레그램",
+      whatsapp: "왓츠앱",
+      kakao: "카카오톡",
     },
     certificate: {
       heading: "등록 인증서 샘플",
