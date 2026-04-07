@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { useLanguage } from "../context/language-context";
 import { translations } from "../lib/translations";
 import { Reveal } from "./reveal";
+import { ShieldBadge } from "./svg-illustrations";
 
 export const CtaSection = () => {
   const { language } = useLanguage();
@@ -14,6 +15,8 @@ export const CtaSection = () => {
       <Reveal>
         <div className="panel relative overflow-hidden rounded-[1.9rem] px-5 py-10 sm:rounded-[2.5rem] sm:px-10 sm:py-12 lg:px-14 lg:py-16">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(213,176,106,0.16),transparent_30%),radial-gradient(circle_at_85%_18%,rgba(138,160,196,0.14),transparent_32%),linear-gradient(135deg,rgba(255,248,238,0.05),rgba(255,255,255,0.015))]" />
+          {/* Decorative shield */}
+          <ShieldBadge className="pointer-events-none absolute -right-6 -bottom-4 h-[180px] w-[180px] opacity-30 sm:-right-2 sm:-bottom-2 sm:h-[220px] sm:w-[220px] lg:h-[260px] lg:w-[260px]" />
           <div className="relative flex flex-col gap-8 sm:gap-10 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--muted)] sm:tracking-[0.38em]">

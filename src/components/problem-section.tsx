@@ -1,11 +1,11 @@
 "use client";
 
-import { AlertTriangle, MemoryStick } from "lucide-react";
 import { useLanguage } from "../context/language-context";
 import { translations } from "../lib/translations";
 import { Reveal } from "./reveal";
+import { SectionDivider, IconNoProof, IconRegulatory, IconUnenforceable, IconTaxGap, IconRWA, IconFraud } from "./svg-illustrations";
 
-const icons = [AlertTriangle, MemoryStick];
+const icons = [IconNoProof, IconRegulatory, IconUnenforceable, IconTaxGap, IconRWA, IconFraud];
 
 export const ProblemSection = () => {
   const { language } = useLanguage();
@@ -31,7 +31,7 @@ export const ProblemSection = () => {
                 <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-[radial-gradient(circle,rgba(139,92,246,0.2),transparent_65%)] blur-2xl" />
                 <div className="relative">
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-[var(--accent)]">
-                    <Icon className="h-5 w-5" />
+                    <Icon className="h-7 w-7" />
                   </span>
                   <h3 className="mt-5 font-heading text-[1.7rem] text-white sm:mt-6 sm:text-2xl">{card.title}</h3>
                   <p className="mt-3 max-w-xl text-[15px] leading-7 text-[var(--text-soft)] sm:mt-4 sm:text-base sm:leading-8">
@@ -43,6 +43,8 @@ export const ProblemSection = () => {
           );
         })}
       </div>
+
+      <SectionDivider className="mt-8 w-full sm:mt-10" />
     </section>
   );
 };

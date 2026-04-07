@@ -7,6 +7,7 @@ import { translations } from "../lib/translations";
 import { ClusterVisualization } from "./cluster-visualization";
 import { ProcessBars } from "./process-bars";
 import { Reveal } from "./reveal";
+import { HeroAccent, SectionDivider } from "./svg-illustrations";
 
 const Counter = ({ value }: { value: number }) => {
   const [displayValue, setDisplayValue] = useState(0);
@@ -39,7 +40,9 @@ export const HeroSection = () => {
   const copy = translations[language].hero;
 
   return (
-    <section id="overview" className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 pt-8 pb-14 sm:px-6 sm:pt-10 sm:pb-20 lg:px-8 lg:pt-16">
+    <section id="overview" className="relative mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 pt-8 pb-14 sm:px-6 sm:pt-10 sm:pb-20 lg:px-8 lg:pt-16">
+      {/* SVG accent behind hero */}
+      <HeroAccent className="pointer-events-none absolute -right-20 -top-20 h-[400px] w-[400px] opacity-40 sm:h-[500px] sm:w-[500px]" />
       <div className="grid gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-8">
         <Reveal className="space-y-6 sm:space-y-8">
           <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-white/12 bg-white/[0.04] px-3 py-2 font-mono text-[9px] uppercase tracking-[0.26em] text-[var(--muted)] sm:px-4 sm:text-[10px] sm:tracking-[0.38em]">
@@ -162,6 +165,9 @@ export const HeroSection = () => {
           </div>
         </Reveal>
       </div>
+
+      {/* Section divider */}
+      <SectionDivider className="mt-4 w-full" />
     </section>
   );
 };

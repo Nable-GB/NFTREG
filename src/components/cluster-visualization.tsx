@@ -1,3 +1,5 @@
+import { RegistrationSeal } from "./svg-illustrations";
+
 export const ClusterVisualization = () => {
   return (
     <div className="panel relative min-h-[360px] overflow-hidden rounded-[1.6rem] p-4 sm:min-h-[420px] sm:rounded-[2rem] sm:p-6">
@@ -16,8 +18,8 @@ export const ClusterVisualization = () => {
               </p>
               <h3 className="mt-2 font-heading text-[1.75rem] leading-none text-white sm:mt-3 sm:text-3xl">NFTReg.US</h3>
             </div>
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[rgba(213,176,106,0.28)] bg-[radial-gradient(circle,rgba(213,176,106,0.18),transparent_72%)] sm:h-16 sm:w-16">
-              <div className="h-8 w-8 rounded-full border border-[rgba(213,176,106,0.5)] sm:h-11 sm:w-11" />
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center sm:h-16 sm:w-16">
+              <RegistrationSeal className="h-14 w-14 animate-[spin_60s_linear_infinite] sm:h-[72px] sm:w-[72px]" />
             </div>
           </div>
 

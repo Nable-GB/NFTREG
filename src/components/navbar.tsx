@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "../context/language-context";
 import { translations } from "../lib/translations";
+import { LogoMark } from "./svg-illustrations";
 
 export const Navbar = () => {
   const { language, setLanguage } = useLanguage();
@@ -15,9 +16,8 @@ export const Navbar = () => {
       <div className="panel rounded-[1.5rem] px-4 py-3 backdrop-blur-xl sm:px-6">
         <div className="flex items-start justify-between gap-3 sm:items-center">
         <a href="#overview" className="flex min-w-0 items-center gap-3">
-          <span className="relative inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04]">
-            <span className="absolute inset-2 rounded-xl bg-[radial-gradient(circle_at_top,var(--accent-soft),transparent_58%)]" />
-            <span className="font-heading text-lg tracking-[0.25em] text-white">NF</span>
+          <span className="relative inline-flex h-11 w-11 items-center justify-center">
+            <LogoMark className="h-11 w-11" />
           </span>
           <div className="min-w-0">
             <p className="truncate font-heading text-base uppercase tracking-[0.28em] text-white sm:text-lg sm:tracking-[0.32em]">

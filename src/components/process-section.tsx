@@ -1,11 +1,11 @@
 "use client";
 
-import { FileCheck2, Landmark, Scale, ShieldCheck } from "lucide-react";
 import { useLanguage } from "../context/language-context";
 import { translations } from "../lib/translations";
 import { Reveal } from "./reveal";
+import { IconConsultation, IconStrategy, IconFiling, IconCertificate, SectionDivider } from "./svg-illustrations";
 
-const icons = [Landmark, Scale, FileCheck2, ShieldCheck];
+const icons = [IconConsultation, IconStrategy, IconFiling, IconCertificate];
 
 export const ProcessSection = () => {
   const { language } = useLanguage();
@@ -30,7 +30,7 @@ export const ProcessSection = () => {
                 <div className="flex items-center gap-4">
                   <span className="font-heading text-3xl text-white/25 sm:text-4xl">{step.index}</span>
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-[var(--accent)]">
-                    <Icon className="h-5 w-5" />
+                    <Icon className="h-7 w-7" />
                   </span>
                 </div>
                 <h3 className="mt-5 font-heading text-[1.7rem] text-white sm:mt-6 sm:text-2xl">{step.title}</h3>
@@ -53,6 +53,8 @@ export const ProcessSection = () => {
           </Reveal>
         ))}
       </div>
+
+      <SectionDivider className="mt-8 w-full sm:mt-10" />
     </section>
   );
 };

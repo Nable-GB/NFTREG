@@ -1,11 +1,11 @@
 "use client";
 
-import { ActivitySquare, Layers3, Radar } from "lucide-react";
 import { useLanguage } from "../context/language-context";
 import { translations } from "../lib/translations";
 import { Reveal } from "./reveal";
+import { SectionDivider, IconCopyright, IconTrademark, IconSEC, IconProperty } from "./svg-illustrations";
 
-const icons = [Layers3, ActivitySquare, Radar];
+const icons = [IconCopyright, IconTrademark, IconSEC, IconProperty];
 
 export const FeaturesSection = () => {
   const { language } = useLanguage();
@@ -29,7 +29,7 @@ export const FeaturesSection = () => {
                 <div className="flex items-center gap-4 lg:block">
                   <p className="font-heading text-4xl text-white/25 sm:text-5xl">{feature.index}</p>
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-[var(--accent)] lg:mt-5">
-                    <Icon className="h-5 w-5" />
+                    <Icon className="h-7 w-7" />
                   </span>
                 </div>
 
@@ -55,6 +55,8 @@ export const FeaturesSection = () => {
           );
         })}
       </div>
+
+      <SectionDivider className="mt-8 w-full sm:mt-10" />
     </section>
   );
 };
