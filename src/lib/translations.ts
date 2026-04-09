@@ -228,7 +228,7 @@ export const translations = {
       ],
     },
     footer: {
-      copy: "© 2025 NFTReg.US · All rights reserved.",
+      copy: "© 2025 USDGA.US · All rights reserved.",
       links: ["Privacy", "Terms", "Contact", "Blog"],
     },
   },
@@ -461,7 +461,7 @@ export const translations = {
       ],
     },
     footer: {
-      copy: "© 2025 NFTReg.US · 모든 권리 보유.",
+      copy: "© 2025 USDGA.US · 모든 권리 보유.",
       links: ["개인정보처리방침", "이용약관", "문의하기", "블로그"],
     },
   },
