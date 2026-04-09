@@ -22,7 +22,7 @@ const monoFont = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NFT Registration USA | Legal NFT Consulting | NFTReg.US",
+  title: "NFT Registration USA | Legal NFT Consulting | USDGA.US",
   description:
     "Register your NFT legally in the USA. We guide creators, companies, and investors through US Copyright Office, USPTO, and SEC compliance from start to finish.",
 };

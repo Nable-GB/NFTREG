@@ -21,7 +21,7 @@ export const Navbar = () => {
           </span>
           <div className="min-w-0">
             <p className="truncate font-heading text-base uppercase tracking-[0.28em] text-white sm:text-lg sm:tracking-[0.32em]">
-              NFTReg.US
+              USDGA.US
             </p>
             <p className="truncate font-mono text-[9px] uppercase tracking-[0.28em] text-[var(--muted)] sm:text-[10px] sm:tracking-[0.35em]">
               {copy.nav.tagline}

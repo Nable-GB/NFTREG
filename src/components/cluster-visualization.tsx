@@ -23,7 +23,7 @@ export const ClusterVisualization = () => {
               <p className="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--muted)] sm:text-[10px] sm:tracking-[0.34em]">
                 {cert.heading}
               </p>
-              <h3 className="mt-2 font-heading text-[1.75rem] leading-none text-white sm:mt-3 sm:text-3xl">NFTReg.US</h3>
+              <h3 className="mt-2 font-heading text-[1.75rem] leading-none text-white sm:mt-3 sm:text-3xl">USDGA.US</h3>
             </div>
             <div className="flex h-12 w-12 shrink-0 items-center justify-center sm:h-16 sm:w-16">
               <RegistrationSeal className="h-14 w-14 animate-[spin_60s_linear_infinite] sm:h-[72px] sm:w-[72px]" />
